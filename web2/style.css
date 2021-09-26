@@ -1,0 +1,202 @@
+*{
+    color:black;
+    font-size: 1.2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color:hsl(38, 94%, 69%) ;
+}
+
+h1{
+    font-size: 2rem;
+    text-align: center;
+    color:hsl(16, 77%, 58%);
+    text-shadow:
+    hsl(348, 83%, 47%) 1.5px 1.5px,
+     hsl(348, 83%, 53%) 1.5px 1.5px,
+     hsl(348, 83%, 60%) 1.5px 1.5px,
+     hsl(348, 83%, 63%) 1.5px 1.5px,
+     hsl(348, 83%, 69%) 1.5px 1.5px,
+     hsl(348, 83%, 74%) 1.5px 1.5px,
+     hsl(348, 83%, 78%) 1.5px 1.5px;
+
+     animation-name: animatie;
+     animation-duration: 2s;
+     animation-timing-function:cubic-bezier(0.82, 0.81, 0.83, 1.68);
+}
+
+.header{
+    background-color:hsl(38, 94%, 69%) ;
+    padding: 1rem;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-top: -10px;
+    border-bottom: dashed 5px hsl(32, 94%, 69%) ;
+}
+
+.section1{
+    background-color:hsl(32, 94%, 69%) ;
+    padding: 0.5rem;
+    margin-left: -8px;
+    margin-right: -8px;
+    border-bottom: dashed 5px hsl(19, 94%, 69%) ;
+}
+
+.section2{
+    background-color:hsl(19, 94%, 69%) ;
+    padding: 2rem;
+    margin-left: -8px;
+    margin-right: -8px;
+    border-bottom: dashed 5px hsl(9, 94%, 69%) ;
+}
+
+.section3{
+    background-color:hsl(9, 94%, 69%) ;
+    padding: 2rem;
+    margin-left: -8px;
+    margin-right: -8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: dashed 5px hsl(3, 94%, 69%) ;
+}
+
+.footer{
+    background-color:hsl(3, 94%, 69%) ;
+    padding: 2rem;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-bottom: -8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+#stuff{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#reguli{
+ padding: 40px;  
+ border:black 0.5rem double;
+}
+
+#flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#linktop{
+    background-color:hsl(0, 100%, 100%) ;
+    float: right;
+    padding: 0.5rem;
+    border: solid black 1px;
+    border-radius: 50%;
+    margin-left: 96%;
+    margin-right: 4%;
+    position: sticky;
+    top: 5px;
+    z-index: 100000;
+}
+#linkbottom{
+    background-color:hsl(0, 100%, 100%) ;
+    float: left;
+    padding: 0.5rem;
+    border: solid black 1px;
+    border-radius: 50%;
+    margin-left: 4%;
+    margin-right: 96%;
+    position: sticky;
+    top: 5px;
+    z-index: 100000;
+}
+.img{
+    margin:0.2rem
+}
+
+.discordjoin{
+   transform:scale(0.7);
+}
+
+.discordjoin:hover{
+    transform: scale(0.5);
+}
+
+p{
+    text-align: center;
+}
+
+li{
+    padding: 5px;
+}
+
+legend{
+    border: black solid 0.2rem;
+    background-color:hsl(19, 94%, 89%) ;
+}
+
+fieldset{
+    background-color:hsl(19, 94%, 79%) ;
+}
+
+#serverdis{
+    color: blue;
+}
+
+#serverdis:visited{
+    color: red;
+}
+
+#serverdis:target{
+    color: red;
+}
+
+#serverdis::selection{
+    color: rgba(255, 0, 212, 0.685);
+}
+
+
+
+@keyframes animatie {
+    0%{transform: scale(0.5);}
+    100%{transform:scale(1);}
+}
+
+*::selection{
+    color: whitesmoke;
+}
+
+@media only screen and (max-width: 600px)
+{
+    .iframe{display: none;}
+}
+
+@media only screen and (min-width: 600px)
+{
+    .discordjoin{display: none;}
+}
+
+@media only screen and (max-width: 605px)
+{
+    #linktop{
+        display: none;
+    }
+    #linkbottom{
+        display: none;
+    }
+}
